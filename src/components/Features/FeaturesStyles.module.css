@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.main {
+    background-color: #16171D;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.featureCard {
+    align-content: center;
+    width: 22rem;
+    height: 19rem;
+    border-style: solid;
+    border-color: #787A8D;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+
+    h3 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        color: #787A8D;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2rem 1rem;
+    }
+}

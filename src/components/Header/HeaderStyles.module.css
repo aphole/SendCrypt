@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.main {
+    background-color: #16171D;
+    height: 38.25rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem; 
+}
+
+.contentLeft {
+    margin-top: 10.375rem;
+    margin-left: 3rem;
+    width: 30.125rem;
+
+    h1 {
+        color: #fff;
+        font-size: 44px;
+        margin-bottom: 0.75rem;
+    }
+
+    p {
+        color: #787A8D;
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        border-radius: 0.75rem;
+        padding: 12px 20px;
+        background-color: #F5C249;
+        border-style: none;
+        color: #16171D;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 1.813rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #897035;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column-reverse;
+        padding: 2rem 1rem; /* Adjust padding for mobile */
+        height: auto; /* Allow the height to adjust to the content */
+    }
+
+    .contentLeft {
+        text-align: center;
+        margin: 0 auto; /* Center content horizontally */
+        margin-top: 2rem; /* Adjust margin for spacing */
+        width: 100%; /* Take full width on smaller screens */
+        padding: 0 1rem; /* Add padding for better text alignment */
+    
+        h1{
+            font-size: 30px;
+        }
+    }
+
+
+
+    .contentRight {
+        position: relative; /* Change position to relative */
+        align-items: center; /* Center content horizontally */
+        margin-bottom: 2rem; /* Add margin for spacing */
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        
+        img {
+            height: 20rem;
+            width: 20rem;
+        }
+    }
+}
